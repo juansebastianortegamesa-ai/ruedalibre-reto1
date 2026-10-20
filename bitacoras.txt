@@ -1,0 +1,16 @@
+URL COMPLETA:http://127.0.0.1:5500/ruedalibre.html/index.html
+URL COMPLETA FAlSA:http://127.0.0.1:5500/ruedalibre.html/index.html/GGEZPAPAFFAL15
+EL PROTOCOLO:http://127.0.0.1:5500/
+EL HOST: ruedalibre.html
+EL PUERTO:5500
+METODO DE PETICION: GET 
+CODIGO DE ESTADO:304 (incialmente sin codigo de error) y con la url falsa da 404 :
+ 404 código de estado del protocolo HTTP que indica que el servidor web pudo comunicarse con el sitio, pero no encontró el recurso o la página que se solicitó.
+        
+
+#para que sirve cada lenguaje
+
+java script permite que la pagina responda a las acciones del usuario como por ejemplo validar formularios, actualizar la informacion de la pagina sin recargar la pagina encontró
+el html sirve para  organizar y seccionar  practicamente armar el cuerpo de pagina y hacer las funciones como botones enlaces a otras paginas o colocar imagenes encontró
+css sirve para controlar la aparencia visual de la pagina como las fuentes de las letras animaciones distribucion de elementos.
+
