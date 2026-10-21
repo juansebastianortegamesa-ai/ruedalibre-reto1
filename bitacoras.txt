@@ -14,3 +14,5 @@ java script permite que la pagina responda a las acciones del usuario como por e
 el html sirve para  organizar y seccionar  practicamente armar el cuerpo de pagina y hacer las funciones como botones enlaces a otras paginas o colocar imagenes encontró
 css sirve para controlar la aparencia visual de la pagina como las fuentes de las letras animaciones distribucion de elementos.
 
+#RETO DEL DIA 2
+
