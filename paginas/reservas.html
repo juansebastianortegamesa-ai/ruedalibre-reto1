@@ -60,11 +60,24 @@
 
             <p>
               <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required />
+              <input type="text" id="nombre" name="nombre" required minlength="3" 
+                pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                title= "porfavor introdusca su nombre recuerde que son solo con letras"/>
+            </p>
+
+            <p>
+            <label for="apellido">apellido:</label>
+              <input type="text" id="apellido" name="apellido" required 
+                minlength="3" 
+                pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                title=" porfavor introducir su apellido recuerde Solo se permiten letras"/>
             </p>
             <p>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" required 
+             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+             placeholder="tucorreo@example.com"
+             title="Ingresa un correo válido, por ejemplo usuario@gmail.com"/>
             </p>
           </fieldset>
 
@@ -72,7 +85,7 @@
             <legend>Tu alquiler</legend>
             <p>
               <label for="bicicleta">Tipo de bicicleta:</label>
-              <select id="bicicleta" name="bicicleta" required>
+              <select id="bicicleta" name="bicicleta" required >
                 <option value="">Selecciona un tipo</option>
                 <option value="urbana">Urbana</option>
                 <option value="montaña">Montaña</option>
@@ -114,40 +127,4 @@
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-</section>
-</main>
-    <footer>
-        <p> 2026 sebastian ortega . Todos los derechos reservados .</p>
-        <ul>
-            <li>Rueda libre</li>
-            <li><a href="hola@ruedalibre.example"></a></li>
-            <li>2026</li>
-        </ul>
-    </footer>
-</body>
-</html>
-    
-</body>
-</html>
+<!--autocomplete="off"> esta mmda es para guardar los formularios-->
