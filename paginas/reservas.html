@@ -79,10 +79,16 @@
              placeholder="tucorreo@example.com"
              title="Ingresa un correo válido, por ejemplo usuario@gmail.com"/>
             </p>
+
+            <p>
+              <label for="nombre">Nombre:</label>
+              <input type="number" id="cedula" name="cedula" 
+              placeholder="Ej: 3001234567" pattern="[0-9]{10}"
+            title= "porfavor introdusca su cedula recuerde evitar poner . o ,"/>g
+            </p>
           </fieldset>
 
           <fieldset>
-            <legend>Tu alquiler</legend>
             <p>
               <label for="bicicleta">Tipo de bicicleta:</label>
               <select id="bicicleta" name="bicicleta" required >
@@ -101,6 +107,26 @@
                 <option value="1dia">Día completo</option>
               </select>
             </p>
+              </fieldset>
+              
+             <fieldset>
+                <p>
+                <form action="SEND" method="POST">
+                <label for="telefono">Telefono:</label>
+                <input  type="tel" id="telefono" name="telefono" 
+                required
+                placeholder="Ej: 3001234567" pattern="[0-9]{10}"
+                title="recuerde no puede execeder mas de 10 digitos y solo en formato numerico" ><button type="submit">enviar</button></form>
+                </p>
+             </fieldset>
+
+            <fieldset>
+            <p>
+            <label for="fechareserva">tu fecha de reservacion
+            <input type="date" name="fecha-reserva" min="2026-11-01" max="2026-12-31"
+            title="porfavor introdusca una fecha valida de nuestros servicios" />
+            </label>
+             </p>
           </fieldset>
 
           <fieldset>
