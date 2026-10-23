@@ -72,6 +72,7 @@
                 pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
                 title=" porfavor introducir su apellido recuerde Solo se permiten letras"/>
             </p>
+            
             <p>
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required 
@@ -79,12 +80,30 @@
              placeholder="tucorreo@example.com"
              title="Ingresa un correo válido, por ejemplo usuario@gmail.com"/>
             </p>
-
+            <!--pattern="(?!1234567$)\d+$"  sirve para bloquear especificamente 1234567-->
             <p>
-              <label for="nombre">Nombre:</label>
-              <input type="number" id="cedula" name="cedula" 
-              placeholder="Ej: 3001234567" pattern="[0-9]{10}"
-            title= "porfavor introdusca su cedula recuerde evitar poner . o ,"/>g
+              <label for="cedula">cedula:</label>
+              <input type="text" id="cedula" name="cedula" required 
+              minlength="6"
+              maxlength="10"
+              pattern="(?!1234567$)\d+$"
+              pattern="[0-9]{7,10}" placeholder="Ej: 12345678"
+              title="secuencias como 123456 no son validas,recuerde introducir su cedula correctamente"/>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            </p>
+            <p>
+              <label for="cantidad-bicicletas">cantidad de bicicletas:</label>
+              <input
+                type="number"
+                id="cantidad-bicicletas"
+                name="cantidad-bicicletas"
+                required
+                min="1"
+                max="6"
+              />
             </p>
           </fieldset>
 
@@ -108,28 +127,64 @@
               </select>
             </p>
               </fieldset>
-              
+
+
              <fieldset>
                 <p>
-                <form action="SEND" method="POST">
+                <form action="tel" method="POST">
                 <label for="telefono">Telefono:</label>
                 <input  type="tel" id="telefono" name="telefono" 
                 required
-                placeholder="Ej: 3001234567" pattern="[0-9]{10}"
-                title="recuerde no puede execeder mas de 10 digitos y solo en formato numerico" ><button type="submit">enviar</button></form>
+                pattern="(?!1234567$)\d+$"
+                placeholder="Ej:3001234567" pattern="[0-9]{10}"
+                title="recuerde no puede execeder mas de 10 digitos y solo en formato numerico"/>
                 </p>
              </fieldset>
 
             <fieldset>
             <p>
             <label for="fechareserva">tu fecha de reservacion
-            <input type="date" name="fecha-reserva" min="2026-11-01" max="2026-12-31"
-            title="porfavor introdusca una fecha valida de nuestros servicios" />
+            <input type="date" name="fecha-reserva" required min="2026-11-01" max="2026-12-31"
+            title="porfavor introdusca una fecha valida de nuestros servicios"/>
             </label>
              </p>
+          </fieldset>]
+
+            <fieldset>
+            <legend>Confirmación</legend>
+            <p>
+              <label for="confirmacion-datos">¿Confirma los datos?</label>
+              <input
+                type="checkbox"
+                id="confirmacion-datos"
+                name="confirmacion-datos"
+                required/>
+            </p>
+
+            <p>
+              <label for="confirmacion-terminos"
+                >¿Acepta los términos y condiciones de la empresa rueda libre</label
+              >
+              <input
+              type="checkbox" id="confirmacion-terminos"
+              name="confirmacion-terminos"
+              required/>
+            </p>
           </fieldset>
 
           <fieldset>
+            <p>
+          <label for="comentarios">Comentarios:</label>
+              <input
+                type="text"
+                id="comentarios"
+                name="comentarios"
+                maxlength="300"
+                placeholder="Escribe tus comentarios aquí..."/>
+            </p>
+          <fieldset>
+
+
             <legend>Confirmación</legend>
             <p>
               <label for="confirmacion">¿Confirma los datos?</label>
@@ -153,4 +208,4 @@
 </body>
 </html>
 
-<!--autocomplete="off"> esta mmda es para guardar los formularios-->
+<!--autocomplete="off">es para guardar los formularios-->
